@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Point {
     //instance fields(data)
     private int x;
@@ -57,5 +59,10 @@ public class Point {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public int hashCode() {
+        return 31513 * x + y;
     }
 }
